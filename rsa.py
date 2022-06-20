@@ -1,3 +1,4 @@
+#Given an N this algorithm breaks an RSA key 
 
 p = 2
 n = 99677
@@ -28,12 +29,12 @@ def prime(num):
 while (n % p != 0 or prime(p) == False):
     p += 1
 
-q = n/p
+q = n / p
 Z = (p-1) * (q-1)
 
 # Printing P and Z
 print("P: ", p)
-print("z: ", Z)
+print("Z: ", Z)
 
 # Finding E and D
 e = 2
@@ -45,5 +46,5 @@ while (k % e != 0):
     e += 1
 
 # Finding E e K
-print("Valor: ", e)
-print("K", k)
+print("E: ", e)
+print("K: ", k)
